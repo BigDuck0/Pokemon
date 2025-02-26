@@ -1,0 +1,71 @@
+/* 🔹 Header */
+.header {
+  position: sticky;
+  top: 0; /* ติดไว้ที่ด้านบน */
+  width: 96.07%;
+  background-color: #5a3b91;
+  padding: 15px 15px;
+  z-index: 1000; /* ทำให้ Header อยู่ด้านหน้าสุด */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* กระจายซ้าย-ขวา */
+  background-color: #5a3b91; /* พื้นหลังสีม่วง */
+  padding: 15px 30px; /* ระยะห่างขอบ */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+  border-radius: 0 0 20px 20px;
+  overflow: hidden; /* ✅ ป้องกันการขยายเกิน */
+}
+
+/* 🔹 Logo Container */
+.logoContainer {
+  flex-grow: 1; /* ดันให้ไปทางซ้าย */
+  margin-left: 30px; 
+}
+
+
+/* 🔹 เมนูด้านขวา */
+.navLinks {
+  display: flex;
+  gap: 15px; /* ระยะห่างระหว่างเมนู */
+  margin-right: 50px;
+}
+
+/* 🔹 สไตล์เมนู */
+.navItemLogin {
+  background-color: #28a745; /* สีเมนู */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px; /* ทำให้คลิกง่ายขึ้น */
+  border: 2px solid transparent; /* ขอบโปร่งใส */
+  border-radius: 8px;
+  transition: all 0.3s ease; /* ทำให้ hover นุ่มนวล */
+}
+
+.navItemSighUp {
+  background-color: #007bff; /* สีเมนู */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px; /* ทำให้คลิกง่ายขึ้น */
+  border: 2px solid transparent; /* ขอบโปร่งใส */
+  border-radius: 8px;
+  transition: all 0.3s ease; /* ทำให้ hover นุ่มนวล */
+}
+
+.navItemLogout {
+  background-color: #e22d2d; /* สีเมนู */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px; /* ทำให้คลิกง่ายขึ้น */
+  border: 2px solid transparent; /* ขอบโปร่งใส */
+  border-radius: 8px;
+  transition: all 0.3s ease; /* ทำให้ hover นุ่มนวล */
+}
+
+/* 🔹 Hover Effect */
+.navItem:hover {
+  background-color: #c33333; /* สีอ่อนลงเมื่อชี้ */
+  border-color: black; /* ขอบสีขาว */
+}
